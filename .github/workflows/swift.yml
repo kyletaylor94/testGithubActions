@@ -25,4 +25,4 @@ jobs:
 
       - name: Run Tests
         run: |
-          xcodebuild -scheme testProjectForGithubActions -sdk iphonesimulator -configuration Debug test
+          xcodebuild -scheme testProjectForGithubActions -sdk iphonesimulator -configuration Debug test -destination 'platform=iOS Simulator,name=iPhone 14'
