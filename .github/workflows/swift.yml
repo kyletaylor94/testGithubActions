@@ -21,7 +21,7 @@ jobs:
 
       - name: Build the Project
         run: |
-          xcodebuild -scheme ActualSchemeName -sdk iphoneos -configuration Release build
+          xcodebuild -scheme testProjectForGithubActions -sdk iphoneos -configuration Release build
       - name: Run Tests
         run: |
-          xcodebuild -scheme ActualSchemeName -sdk iphonesimulator -configuration Debug test
+          xcodebuild -scheme testProjectForGithubActions -sdk iphonesimulator -configuration Debug test
